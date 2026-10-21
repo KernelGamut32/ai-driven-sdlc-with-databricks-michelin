@@ -1,0 +1,19 @@
+# This is a Declarative Automation Bundle definition for o2i-workshop.
+# The Databricks extension requires databricks.yml configuration file.
+# tools/prepare_cohort.py (instructor) writes the workspace host of your class.
+
+bundle:
+  name: o2i-workshop
+
+sync:
+  exclude:
+    - checkpoints/**
+    - .backups/**
+    - .checkpoint_base/**
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://adb-7405605059736722.2.azuredatabricks.net

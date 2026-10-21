@@ -1,0 +1,6 @@
+.databricks/
+.venv/
+__pycache__/
+*.pyc
+.backups/
+.checkpoint_base/
